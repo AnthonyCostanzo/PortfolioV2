@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+}
+.wrapper .static {
+  font-weight: 800;
+}
+.wrapper .dynamic {
+  margin-left: 0px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+}
+.dynamic li {
+  list-style: none;
+
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 14s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic li span {
+  margin: 0px 0px;
+  line-height: 80px;
+}
+.dynamic li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  background: black;
+  opacity: 1;
+
+  animation: typing 3.5s steps(12) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 20px);
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
