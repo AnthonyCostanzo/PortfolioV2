@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import emailjs from "emailjs-com";
 
+const isInvalidInput = (input) => input.trim() === "";
+
 const Contact = ({ email_id, client_id, template_id }) => {
   const nameRef = useRef();
   const emailRef = useRef();
@@ -17,6 +19,14 @@ const Contact = ({ email_id, client_id, template_id }) => {
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const message = messageRef.current.value;
+    if (
+      isInvalidInput(name) ||
+      isInvalidInput(email) ||
+      isInvalidInput(message)
+    ) {
+      setIsLoading(false);
+      return alert("All fields must be filled");
+    }
 
     try {
       await emailjs.send(
@@ -30,7 +40,8 @@ const Contact = ({ email_id, client_id, template_id }) => {
         },
         client_id
       );
-      alert("Message sent succesfully!");
+      setIsLoading(false);
+      return alert("Message sent succesfully!");
     } catch (err) {
       console.log(err);
     }
@@ -56,6 +67,7 @@ const Contact = ({ email_id, client_id, template_id }) => {
                 type="text"
                 placeholder=" name"
                 name="name"
+                required
               />
               <input
                 ref={emailRef}
@@ -63,9 +75,11 @@ const Contact = ({ email_id, client_id, template_id }) => {
                 type="email"
                 placeholder=" email"
                 name="email"
+                required
               />
 
               <textarea
+                required
                 ref={messageRef}
                 className="w-72 lg:w-[40vw] p-2 h-32 rounded-sm border-black border-[1px]"
                 placeholder="Enter your message"
