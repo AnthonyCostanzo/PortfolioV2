@@ -74,7 +74,7 @@ const Contact = ({ email_id, client_id, template_id }) => {
                 Send
               </button>
             </div>
-            <div className=" ml-10 mt-10 md:ml-14 md:mt-2 lg:ml-44 space-y-5">
+            <div className="m-auto mt-10 md:ml-14 md:mt-2 lg:ml-44 space-y-5">
               <div className="flex">
                 <BsFillTelephoneFill
                   className="hover:scale-110 cursor-pointer"
