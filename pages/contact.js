@@ -44,12 +44,12 @@ const Contact = ({ email_id, client_id, template_id }) => {
         </div>
       )}
       <form onSubmit={onFormSubmit} className=" font-['Mono'] pb-20">
-        <h1 className="m-auto relative left-4 md:right-4 px-3 text-3xl mt-10 font-semibold border-black border-r-2 border-l-2 w-max">
+        <h1 className="m-auto relative lg:left-4 md:right-4 px-3 text-3xl mt-10 font-semibold border-black border-r-2 border-l-2 w-max">
           Contact Me
         </h1>
         <div className="flex ">
           <div className="grid grid-cols-1 md:grid-cols-2 mt-10  lg:mt-20 lg:w-8/12 m-auto">
-            <div className="grid gap-3 ml-10 gap-x-5 ">
+            <div className="grid gap-3 m-auto gap-x-5 ">
               <input
                 ref={nameRef}
                 className=" w-72 lg:w-[40vw] p-2 h-12 rounded-sm border-black border-[1px]"
