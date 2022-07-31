@@ -33,7 +33,7 @@ const Home = () => {
             <div className={`${styles.static}  text-[#f2f2f2] w-max relative`}>
               {`Hi, I'm Anthony Costanzo,`}
             </div>
-            <ul className={`${styles.dynamic} text-[25px]  text-[#f2f2f2]`}>
+            <ul className={`${styles.dynamic} text-[27px]  text-[#f2f2f2]`}>
               <li>
                 <span>Software Engineer,</span>
               </li>
