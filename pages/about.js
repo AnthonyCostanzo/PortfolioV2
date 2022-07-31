@@ -24,12 +24,12 @@ const About = () => (
           <div className="order-2 mt-7 md:mt-0 mb-5 xl:mb-0">
             <h2 className="text-2xl font-semibold">General Overview</h2>
             <p className="">
-              My name is Anthony Costanzo, full stack developer, specializing in
-              creating dynamic and beautiful mobile-responsive websites. I
-              strive to stay up to date with the latest industry trends and I am
-              always eager to learn more. I am mostly self taught and have been
-              in the industry for over 3 years. Check out my github to see what
-              I have been up to lately.
+              My name is Anthony Costanzo, a full stack developer, specializing
+              in creating innovative mobile and desktop applications. I strive
+              to stay up to date with the latest industry trends and I am always
+              eager to learn more. I am mostly self taught and have been in the
+              industry for over 3 years. Check out my github to see what I have
+              been up to lately.
             </p>
           </div>
           <div className="xl:w-10/12 h-56 md:h-72 rounded-lg md:order-2 relative">
