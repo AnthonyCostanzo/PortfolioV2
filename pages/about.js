@@ -15,7 +15,7 @@ const education = [
 
 const About = () => (
   <Layout>
-    <div className=" font-['Mono'] pb-20">
+    <div className=" font-[Times] pb-20">
       <h1 className="m-auto px-3 border-black text-3xl mt-10 mb-11 font-semibold border-r-2 border-l-2 w-max">
         About Me
       </h1>
@@ -23,7 +23,7 @@ const About = () => (
         <div className="grid md:grid-cols-2 w-10/12 gap-x-10 m-auto">
           <div className="order-2 mt-7 md:mt-0 mb-5 xl:mb-0">
             <h2 className="text-2xl font-semibold">General Overview</h2>
-            <p className="text-xl">
+            <p className="">
               My name is Anthony Costanzo, full stack developer, specializing in
               creating dynamic and beautiful mobile-responsive websites. I
               strive to stay up to date with the latest industry trends and I am
@@ -45,7 +45,7 @@ const About = () => (
             <h2 className="text-2xl font-semibold">
               Education / Certifications
             </h2>
-            <ul className=" list-disc text-xl">
+            <ul className=" list-disc">
               {education.map((item, i) => (
                 <li className="ml-4" key={i}>
                   {item}

@@ -8,7 +8,7 @@ const navItems = [
     link: "/",
   },
   {
-    name: "Projects",
+    name: "Portfolio",
     link: "/projects",
   },
   {
@@ -26,7 +26,7 @@ const MobileNav = ({ toggleDarkMode, darkMode }) => {
   const toggleNavMenu = () => setNavMenuOpen((prevState) => !prevState);
 
   return (
-    <div className="pt-5 px-7 pb-2 min-h-max md:hidden ">
+    <div className="pt-5 px-7 pb-2 min-h-max md:hidden font-[Times] ">
       <div className="container flex">
         <button
           onClick={toggleDarkMode}
@@ -76,10 +76,10 @@ const MobileNav = ({ toggleDarkMode, darkMode }) => {
         )}
       </div>
       {isNavMenuOpen && (
-        <div className="grid mt-7  leading-8 text-xl animate-fade">
+        <div className="grid mt-7  leading-8 text-xl animate-fade ">
           {navItems.map((item, i) => (
             <Link key={i} href={item.link} passHref>
-              <span className="hover:shadow-sm font-[times] cursor-pointer hover:shadow-sky-400 ">
+              <span className="hover:shadow-sm font-[Times] cursor-pointer hover:shadow-sky-400 ">
                 {" "}
                 {item.name}
               </span>
