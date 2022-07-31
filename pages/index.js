@@ -31,7 +31,7 @@ const Home = () => {
         <div className="items-center flex h-1/3 font-bold  z-1 mx-4 md:ml-8 md:h-1/2 text-[28px] lg:text-[40px] ">
           <div className={`${styles.wrapper} text-gray-100 flex flex-col`}>
             <div className={`${styles.static}  text-[#f2f2f2] w-max relative`}>
-              {`Hi, I'm Anthony Costanzo,`}
+              {`Hi, I'm Anthony Costanzo`}
             </div>
             <ul className={`${styles.dynamic} text-[27px]  text-[#f2f2f2]`}>
               <li>
