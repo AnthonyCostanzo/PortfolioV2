@@ -19,18 +19,18 @@ const navItems = [
 ];
 
 const DesktopNav = () => (
-  <div>
-    <div className="md:flex hidden ml-20 pt-10 space-x-5 divide-x-2 leading-8 animate-fade">
+  <>
+    <div className="md:inline-block hidden p-2 font-[Times] text-[18px] space-x-5 divide-x-2 animate-fade">
       {navItems.map((item, i) => (
         <Link key={i} href={item.link} passHref>
-          <span className="hover:font-bold px-2 cursor-pointer  ">
+          <span className="hover:font-bold mt-10 px-2 cursor-pointer  ">
             {" "}
             {item.name}
           </span>
         </Link>
       ))}
     </div>
-  </div>
+  </>
 );
 
 export default DesktopNav;
